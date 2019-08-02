@@ -35,3 +35,29 @@ netstat -ntlp 这个命令会列举所有启动的端口
 #### 8撤销与取消上次撤销
 
 u 撤销  ctrl + r 取消上次撤销
+
+#### 9用户相关操作
+
+useradd zhangsan  添加张三这个用户
+
+userdel zhangsan 删除张三这个用户
+
+user -r zhangsan 删除张三和张三所拥有的目录
+
+id zhangsan  判断张三这个用户是否存在
+
+who am i 判断当前的用户是谁
+
+usermod -g wudang zhangsan  将用户张三放于武当这个组
+
+#### 10用户组的相关操作
+
+groupadd wudang 添加一个叫做武当的组
+
+goroupdel wudang 删除叫做武当的组
+
+#### 11获取更高权限
+
+su root 切换至root用户，需要输入密码
+
+exit 退出切换的用户，返回本目录

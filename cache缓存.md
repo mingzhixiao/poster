@@ -24,8 +24,9 @@
          Employee employee = employeeMapper.getEmployeeById(id);
          return employee;
      }
-    
-    
+
+
+​    
 
 #### 3、CachePut的使用
 
@@ -40,9 +41,10 @@
         employeeMapper.updateEmployee(employee);
         return employee;
       }
-    
-    
-4.@CahcheEvict的使用
+
+​    
+
+#### 4.@CahcheEvict的使用
 
 
     /*
@@ -62,7 +64,7 @@
     
     }
 
-5@Caching的使用
+#### 5@Caching的使用
 
 
     /*

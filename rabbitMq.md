@@ -66,7 +66,7 @@ public void  test01(){
 
 #### 3、RabbitMap的应用
 
-```
+```java
 @Service
 public class BookService {
     int i = 0;

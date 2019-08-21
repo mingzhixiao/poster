@@ -47,3 +47,35 @@ AND c.`status` = #{params.status, jdbcType = INTEGER}
 ```
 
 使用<if test =“xxx ！=null"></if>做非空校验
+
+#### 3多对多查询
+
+<!--易错注意-->
+
+**在查询两个表中的字段时，如果有字段名称一样，千万要取别名，不然就会出现集合中只有一个元素的情况**
+
+![](C:\Users\Administrator\Desktop\studyNotes\images/1566402402378.png)
+
+```xml
+先写一个resultMap，然后再写查询的语句
+<resultMap id="roleMap" type="com.wzw.entity.Role">
+  <id column="id" property="id" jdbcType="INTEGER"/>
+  <result column="name" property="name" jdbcType="VARCHAR"/>
+  <collection property="userList" ofType="com.wzw.entity.User">
+    <id column="userId" property="id" jdbcType="INTEGER"/>
+    <result column="username" property="username" jdbcType="VARCHAR"/>
+    <result column="password" property="password" jdbcType="VARCHAR"/>
+  </collection>
+</resultMap>
+```
+
+```xml
+<select id="getUserByRoleName" resultMap="roleMap" parameterType="java.lang.Integer">
+  SELECT r.id,r.name ,u.id userId,u.username,u.password
+  FROM t_user u
+  LEFT JOIN t_user_role t ON t.user_id = u.id
+  LEFT JOIN t_role r ON r.id = t.role_id
+  where r.id = #{id}
+</select>
+```
+

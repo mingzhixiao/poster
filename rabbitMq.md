@@ -18,7 +18,7 @@ AmqpAdmin amqpAdmin;
 
 ###### 第二步
 
-```
+```java
 @Test
 public void newText(){
     //创建路由器

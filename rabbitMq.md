@@ -99,3 +99,7 @@ public class MyAMQPConfig {
 }
 
 ```
+
+#### 5.访问地址
+
+http://127.0.0.1:15672

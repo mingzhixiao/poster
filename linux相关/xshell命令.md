@@ -85,3 +85,35 @@ init 6 重启
 #### 13忘记密码
 
 在开机的时候快速按entry键，然后输入命令e，这个命令是用来编辑引导的命令，直至有然后会出现三个选项 选择中间的kernel项，即内核选项，再输入一个e，会出现一个选择运行级别的界面，在这个界面输入1，即单用户（忘记密码）模式
+
+
+
+#### 14.安装jdk
+
+##### 1.解压安装包
+
+tar zxvf jdk-8u181-linux-x64.tar.gz
+
+##### 2.修改环境变量
+
+vim /etc/profile
+
+java环境变量配置 第一行是jdk的安装位置
+
+export JAVA_HOME=/usr/local/jdk/jdk1.8.0_181
+export CLASSPATH=$:CLASSPATH:​$JAVA_HOME/lib/ 
+export PATH=$PATH:​$JAVA_HOME/bin
+
+<https://blog.csdn.net/qq_42815754/article/details/82968464>
+
+#### 15虚拟机安装centos
+
+<https://blog.csdn.net/qq_23033339/article/details/80867195>
+
+#### 16安装git
+
+<https://www.cnblogs.com/imyalost/p/8715688.html>
+
+#### 17安装maven
+
+<https://www.cnblogs.com/zwcry/p/10043224.html>

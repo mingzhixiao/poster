@@ -14,3 +14,17 @@ where
     1 <= TO_DAYS(now()) -TO_DAYS(stat_date)
 	&&	TO_DAYS(now()) -TO_DAYS(stat_date) <= 30
 ```
+
+
+
+##### 2.查询某个日期时间是否在某个日期时间段中
+
+###### 2.1 日期时间分开
+
+select * from t_time where 
+
+(DATE_FORMAT(begin_date, '%Y-%m-%d'),' ',begin_hour)<=now() and
+
+(DATE_FORMAT(end_date, '%Y-%m-%d'),' ',end_hour) <= now()
+
+###### 2.2

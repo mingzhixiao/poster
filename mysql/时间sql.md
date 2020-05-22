@@ -27,4 +27,23 @@ select * from t_time where
 
 (DATE_FORMAT(end_date, '%Y-%m-%d'),' ',end_hour) <= now()
 
-###### 2.2
+##### 3.四种时间函数查询
+
+###### ![](C:\Users\wuzhuwei\Desktop\studyNotes\images\1590135862331.png)
+
+
+
+##### 4.时间的加减
+
+date 日期  interval间隔  “间隔的内容（数字）”，间隔的单位 可以是year，month，day，second
+
+date_add(date,interval,"1,1,1,1" day_second);
+
+![](C:\Users\wuzhuwei\Desktop\studyNotes\images\15901394515053.png)
+
+##### 5.时间格式化
+
+SELECT DATE_FORMAT('2020-02-01 6:3:4','%Y-%m-%d %h:%i:%s')
+
+![](C:\Users\wuzhuwei\Desktop\studyNotes\images\Snipaste_2020-05-22_17-31-07.png)
+

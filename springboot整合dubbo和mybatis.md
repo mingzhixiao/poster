@@ -93,6 +93,7 @@ java.lang.IllegalStateException: Serialized class com.wzw.myapi.entity.Employee 
 
 #### 3依赖不可少
 
+```
 <dependency>
     <groupId>com.alibaba</groupId>
     <artifactId>dubbo</artifactId>
@@ -110,6 +111,11 @@ java.lang.IllegalStateException: Serialized class com.wzw.myapi.entity.Employee 
     <artifactId>zkclient</artifactId>
     <version>0.11</version>
 </dependency>
+```
+
+
+
+
 
 ```java
 <dependency>

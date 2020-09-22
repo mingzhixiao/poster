@@ -17,5 +17,8 @@ curl http://47.97.78.69:11091//vshop/web/fileGroup/queryFileGroupList -X POST -H
 
 ```
 curl http://47.97.78.69:11091//vshop/web/file/upload -H "token:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODcwNzk4Mjk5OCIsImV4cCI6MTU5OTA2MTk2NiwiY3JlYXRlZCI6MTU5OTAxODc2NjcxNn0.6nG_DfRmJr7w9R6gBDghTGSARLdfdyYtoVssP7Ric2u2xYBxHMTOXoynBPBZ2EwPnBUO7mlyie0TZlun7pZnlw" -F "file=b.txt"
+
+
+ curl 192.168.244.179:11087/vshop/wxmp/file/upload/file -H  "token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjYwNTI3MTQ2MTg1ODQyNjg4MTI2MDUyNzE0NjE4NTg0MjY4OCIsImV4cCI6MTYwMDM2NzQzOCwiY3JlYXRlZCI6MTYwMDMyNDIzODY4N30.1i6htyyuNx-ETLsmvMBfZBrNiY767OWfCzH-HgBVhxLQLD9TF4xxDPCkloaAgCoAAzYg_tLckoyZ-WszYDCDfQ" -F "file=D:\企业微信截图_16003237182627.png"
 ```
 

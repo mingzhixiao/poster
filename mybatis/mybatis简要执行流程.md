@@ -43,8 +43,14 @@ Mybatis执行查询流程
 							    handler.<E>query(stmt, resultHandler);
 							     => PreparedStatement.execute();
 								    resultSetHandler.<E> handleResultSets(ps);
-																			
-	SqlSession 四大执行对象  Executor  ParameterHandler StatementHandler ResultSetHandler
+														
+解析阶段   Mapper接口类放入kownMappers  方法放入 mappedStatements
+执行阶段   从konwMapper中获取Mapper    从mappedStatements中获取方法
+private final Map<Class<?>, MapperProxyFactory<?>> knownMappers = new HashMap<Class<?>, MapperProxyFactory<?>>();  knownMappers在MapperRegistry中，mapperRegistry在Configuration中
+Map<String, MappedStatement> mappedStatements = new StrictMap<MappedStatement>("Mapped Statements collection");mappedStatements 在Configuration	
+
+																		
+SqlSession 四大执行对象  Executor  ParameterHandler StatementHandler ResultSetHandler
 	
 
   

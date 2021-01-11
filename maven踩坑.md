@@ -22,3 +22,7 @@ Failed to read artifact descriptor for com.xdd.cshop.manager:xdd-cshop-manager-r
 
 ![](C:\Users\wuzhuwei\Desktop\studyNotes\images\maven\normalStruct.png)
 
+##### 1.4解决方式
+
+ 将子模块所依赖的父模块与子模块一起提交
+
